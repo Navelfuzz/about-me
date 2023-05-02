@@ -1,23 +1,22 @@
 # about-me
 
-# LAB - Number
+# LAB - About Me
 
-## Project Name
+## Project Name: About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This lab goes through building a website about myself.  It incorporates basic HTML structure, linked CSS stylesheets, and basic Javiscript functionality.
 
-### Author: Student/Group Name
+### Author: Aaron Clark
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
 * Any Links you used as reference
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+* Provide a screenshot of your score after running a Lighthouse Accessibility report. <br>
+![First Light House Report](img/Lighthouse Report Lab 2.jpg)
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+- Null responses are not initially handled in my JS prompts.  In the future, I should add error handling that will accept when the user clicks cancel on a prompt.
