@@ -10,7 +10,7 @@ h1 {
   margin-left: 5vw;
 }
 
-p {
+.intro {
   padding: 1vw;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,5 +20,34 @@ p {
   border-style: groove;
   border-width: 5px;
   border-color: black;
+  margin-bottom: 1vw;
   
 }
+
+h2 {
+  font-size: 1vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5vw;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 2vw;
+  
+}
+
+li {
+  font-size: 1vw;
+  color: white;
+  margin-left: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

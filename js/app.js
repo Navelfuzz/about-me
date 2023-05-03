@@ -4,7 +4,7 @@
 
 
 let name = prompt('What is your name?: ');
-alert(`Hi ${name}, welcome to my site! Let's play a guessing game.  Please respond to each question with y/n or yes/no.`);
+alert(`Hi ${name}, welcome to my site! Let's play a guessing game.  Please respond to each yes or no question with y/n or yes/no.`);
 
 // I am going to keep track of how many correct answers the user gets so I will initialize a counter here.
 let correctCount = 0;
@@ -19,7 +19,7 @@ else if (questionOne === 'n' || questionOne === 'no'){
   alert('Sorry, you got that one wrong... I have an older brother.');
 }
 else {
-  alert('Invalid responses are counted as incorret... Please only answer with y/n or yes/no.');
+  alert('Invalid responses are counted as incorrect... Please only answer with y/n or yes/no.');
 }
 
 // Question 2
@@ -32,7 +32,7 @@ else if (questionTwo === 'n' || questionTwo === 'no'){
   correctCount += 1;
 }
 else {
-  alert('Invalid responses are counted as incorret... Please only answer with y/n or yes/no.');
+  alert('Invalid responses are counted as incorrect... Please only answer with y/n or yes/no.');
 }
 
 // Question 3
@@ -45,7 +45,7 @@ else if (questionThree === 'n' || questionThree === 'no'){
   alert('Sorry, you got that one wrong... I went to Washington University in St. Louis.');
 }
 else {
-  alert('Invalid responses are counted as incorret... Please only answer with y/n or yes/no.');
+  alert('Invalid responses are counted as incorrect... Please only answer with y/n or yes/no.');
 }
 
 // Question 4
@@ -58,7 +58,7 @@ else if (questionFour === 'n' || questionFour === 'no'){
   correctCount += 1;
 }
 else {
-  alert('Invalid responses are counted as incorret... Please only answer with y/n or yes/no.');
+  alert('Invalid responses are counted as incorrect... Please only answer with y/n or yes/no.');
 }
 
 // Question 5
@@ -71,8 +71,79 @@ else if (questionFive === 'n' || questionFive === 'no'){
   alert('Sorry, you got that one wrong... I have a cat and a dog.');
 }
 else {
-  alert('Invalid responses are counted as incorret... Please only answer with y/n or yes/no.');
+  alert('Invalid responses are counted as incorrect... Please only answer with y/n or yes/no.');
 }
 
-alert(`Great job ${name}, you got ${correctCount} out of 5 correct!`);
+// Question 6
+let questionSix = Number(prompt('How old am I? (Enter only numbers)'));
+let guessCount = 0;
+
+while (guessCount !== 4){
+  if (questionSix === 33){
+    alert('Exactly right! I am 33 years old.');
+    correctCount += 1;
+    break;
+  }
+  else if (questionSix > 33){
+    alert(`I am not quite that old. You have ${3 - guessCount} guesses remaining.`);
+    guessCount += 1;
+    if (guessCount === 4){
+      alert('Sorry you are out of guesses. The correct answer was 33.');
+      break;
+    }
+    questionSix = Number(prompt('How old am I? (Enter only numbers'));
+  }
+  else if (questionSix < 33){
+    alert(`I am older than that! You have ${3 - guessCount} guesses remaining.`);
+    guessCount += 1;
+    if (guessCount === 4){
+      alert('Sorry you are out of guesses. The correct answer was 33.');
+      break;
+    }
+    questionSix = Number(prompt('How old am I? (Enter only numbers)'));
+  }
+  else {
+    alert(`It looks like you entered something that was not a number.  Please only enter numbers on your next guess! You have ${3 - guessCount} guesses remaining.`);
+    guessCount += 1;
+    if (guessCount === 4){
+      alert('Sorry you are out of guesses. The correct answer was 33.');
+      break;
+    }
+    questionSix = Number(prompt('How old am I? (Enter only numbers)'));
+  }
+
+}
+
+// Question 7
+let favFood = ['tacos', 'burgers', 'pizza', 'sushi', 'chips'];
+let questionSeven = prompt('Can you guess one of my five favorite foods to eat?').toLowerCase();
+let breakAll = false;
+guessCount = 0;
+
+while (guessCount !== 6){
+  for (let i = 0; i < favFood.length; i++){
+    if (questionSeven === favFood[i] || (questionSeven + 's') === favFood[i]){
+      alert(`You got it! That is one of my favorite foods. The possible answers were ${favFood[0]}, ${favFood[1]}, ${favFood[2]}, ${favFood[3]}, and ${favFood[4]}.`);
+      correctCount += 1;
+      breakAll = true;
+      break;
+    }
+  }
+  if (breakAll === true){
+    break;
+  }
+  else {
+    alert(`Nope! That is not one of them, try again.  You have ${5 - guessCount} guesses remaining.`);
+    guessCount += 1;
+    if (guessCount === 6){
+      alert(`Sorry, you are out of guesses.  The possible answers were ${favFood[0]}, ${favFood[1]}, ${favFood[2]}, ${favFood[3]}, and ${favFood[4]}.`);
+      break;
+    }
+    questionSeven = prompt('Can you guess one of my five favorite foods to eat?').toLowerCase();
+  }
+}
+
+
+
+alert(`Great job ${name}, you got ${correctCount} out of 7 correct!`);
 
