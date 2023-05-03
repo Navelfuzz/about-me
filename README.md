@@ -15,7 +15,8 @@ This lab goes through building a website about myself.  It incorporates basic HT
 ### Lighthouse Accessibility Report Score
 
 * Provide a screenshot of your score after running a Lighthouse Accessibility report. <br>
-![First Light House Report](img/Lighthouse-Report-Lab-2.jpg)
+![First Light House Report](img/Lighthouse-Report-Lab-2.jpg) <br>
+![Second Light House Report](img/Lighthouse-Lab-3.jpg)
 
 ### Reflections and Comments
 
