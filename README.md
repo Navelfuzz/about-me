@@ -21,3 +21,9 @@ This lab goes through building a website about myself.  It incorporates basic HT
 ### Reflections and Comments
 
 - Null responses are not initially handled in my JS prompts.  In the future, I should add error handling that will accept when the user clicks cancel on a prompt.
+
+___
+
+### Collaboration:
+
+- Functions added by Jon Stillson as the driver and Aaron Clark as the navigator.
